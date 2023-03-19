@@ -16,10 +16,9 @@ session =sessionmaker()
 Base=declarative_base()
 db = SQLAlchemy(app)
 
-#RuntimeError: Working outside of application context. hatasını gidermek için kullanıldı(güncellik kaynaklı).
 app.app_context().push()
 
-#Model oluşturmak için bir alt sınıf (db.Model)
+
 class  Student(db.Model) :
    
    __tablename__ = "School Table"
