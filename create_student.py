@@ -11,7 +11,7 @@ users = [
     
    }]
 
-#veri tabanı ile iletişim sağlanıyor.
+
 local_session = session(bind = engine)
 
 for u in users:
