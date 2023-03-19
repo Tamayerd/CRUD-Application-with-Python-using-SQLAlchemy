@@ -1,6 +1,5 @@
 from school import Student, session, engine
 
-#veri tabanı ile iletişim sağlanıyor.
 local_session = session(bind = engine)
 
 while(True):
